@@ -46,6 +46,13 @@ SELECT ... FROM t1 JOIN (t2 JOIN t3 ON ...) ON ...
 field1 = value1
 field1 <> value1
 field1 LIKE 'value _ %'
+
+REGEXP 
+  -- ^ beginning
+  -- $ end
+  -- | logical or
+  -- [abcd] or range [a-f]
+  
 field1 IS NULL
 field1 IS NOT NULL
 field1 IS IN (value1, value2)
